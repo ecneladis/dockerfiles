@@ -1,0 +1,11 @@
+---
+  sudo: required
+  notifications:
+    email: true
+  services:
+    - docker
+  script:
+    - ./test.sh
+  env:
+    - VALIDATE_REPO=https://github.com/ecneladis/dockerfiles.git
+    - VALIDATE_BRANCH=master
